@@ -40,4 +40,8 @@ public class MyCircularQueue {
         return response;
     }
 
+    public Node getRear() {
+        return rear;
+    }
+
 }
