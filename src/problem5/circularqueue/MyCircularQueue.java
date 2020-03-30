@@ -71,5 +71,14 @@ public class MyCircularQueue {
         return response;
     }
 
+    public void viewAll() {
+        Node t = rear;
+        while (t.getNext() != rear) {
+            System.out.print(t.getData().name + ", ");
+            t = t.getNext();
+        }
+        System.out.print(t.getData().name);
+    }
+
 
 }
