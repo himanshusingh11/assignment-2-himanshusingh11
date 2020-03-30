@@ -24,4 +24,17 @@ public class MyQueue {
             temp.setNext(newInput);
         }
     }
+
+    public void viewAll(int[] treedata) {
+        QueueNode t = root.getNext();
+        int counter = 0;
+        while (t.getNext() != null) {
+            System.out.print("PreOrderSuccessor of " + treedata[counter] + " : ");
+            counter++;
+            System.out.println(t.getData());
+            t = t.getNext();
+        }
+        System.out.print("PreOrderSuccessor of " + treedata[counter] + " : ");
+        System.out.print(t.getData());
+    }
 }
