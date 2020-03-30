@@ -48,4 +48,20 @@ public class MyCircularQueue {
         return size;
     }
 
+
+    public boolean dequeue() {
+        boolean response = false;
+        if (!isEmpty()) {
+            size--;
+            response = true;
+            if (rear.getNext() == rear) {
+                rear = null;
+            } else {
+                rear.setNext(rear.getNext().getNext());
+            }
+        }
+        return response;
+    }
+
+
 }
