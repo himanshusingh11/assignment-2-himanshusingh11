@@ -71,6 +71,7 @@ public class MyCircularQueue {
         return response;
     }
 
+
     public void viewAll() {
         Node t = rear;
         while (t.getNext() != rear) {
