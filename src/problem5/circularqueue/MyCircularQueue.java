@@ -44,4 +44,8 @@ public class MyCircularQueue {
         return rear;
     }
 
+    public int getSize() {
+        return size;
+    }
+
 }
